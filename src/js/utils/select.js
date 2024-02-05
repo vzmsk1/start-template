@@ -283,8 +283,8 @@ export class Select {
     const relativeSel = this.getSelect(select).relativeSel;
     const selOptions = this.getSelect(select, this.classes.OPTIONS).twinSel;
 
-    if (relativeSel.closest('[data-one-select]')) {
-      const selectOneGroup = relativeSel.closest('[data-one-select]');
+    if (relativeSel.closest('[data-select-single]')) {
+      const selectOneGroup = relativeSel.closest('[data-select-single]');
       this.closeGroup(selectOneGroup, relativeSel);
     }
 
